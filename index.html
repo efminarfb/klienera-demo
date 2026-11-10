@@ -107,6 +107,12 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .burger[aria-expanded="true"] i:last-child{transform:translateY(-3px) rotate(-45deg)}
 .sheet{display:none}
 
+.demo-tag{
+  display:inline-flex;align-items:center;gap:7px;height:22px;padding:0 9px;border-radius:999px;
+  border:1px solid var(--line-strong);font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--cream-40);white-space:nowrap;
+}
+.demo-tag::before{content:"";width:4px;height:4px;border-radius:50%;background:var(--rust-soft)}
 /* ---------- hero ---------- */
 .hero{position:relative;padding-top:clamp(96px,13vh,150px);padding-bottom:clamp(40px,6vh,72px);overflow:clip}
 .hero::before{
@@ -344,7 +350,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   <section class="hero">
     <div class="wrap hero-grid">
       <div class="hero-copy">
-        <div class="eyebrow rv"><span class="dot"></span><span class="mono">The business operating system</span></div>
+        <div class="eyebrow rv" style="flex-wrap:wrap"><span class="dot"></span><span class="mono">The business operating system</span><span class="demo-tag">Design demo</span></div>
         <h1 class="rv" style="--d:.06s">Your whole<br>business, in<br><em>one login.</em></h1>
         <p class="hero-sub rv" style="--d:.14s">Clients, projects, meetings, invoices, salaries and full bookkeeping in one place. Built for studios, agencies and consultancies of two to ten people.</p>
         <div class="hero-cta rv" style="--d:.22s">
@@ -591,7 +597,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
     </div>
     <div class="foot-base">
       <span>© 2026 Klienera. All rights reserved.</span>
-      <span>Made with care for businesses everywhere.</span>
+      <span>Concept demo · illustrative only, not the live product</span>
     </div>
   </div>
 </footer>
